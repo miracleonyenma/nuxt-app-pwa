@@ -1,3 +1,4 @@
+<!-- ./pages/about.vue -->
 <template>
   <section>
     <h1>About page</h1>
