@@ -46,6 +46,13 @@ export default defineNuxtConfig({
     registerWebManifestInRouteRules: true,
     devOptions: {
       enabled: true,
+      navigateFallbackAllowlist: [/^\/$/],
+    },
+    registerType: "autoUpdate",
+  },
+  nitro: {
+    prerender: {
+      routes: ["/", "/about"],
     },
   },
   modules: ["@vite-pwa/nuxt"],
