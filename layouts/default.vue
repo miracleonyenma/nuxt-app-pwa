@@ -3,19 +3,7 @@
 const { $pwa } = useNuxtApp();
 </script>
 <template>
-  <header>
-    <h1>My App</h1>
-    <nav>
-      <ul>
-        <li>
-          <NuxtLink to="/">Home</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/about">About</NuxtLink>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <SiteHeader />
   <main>
     <slot />
     <div v-show="$pwa?.needRefresh">

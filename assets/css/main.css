@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md shadow-sm bg-green-800 text-green-100;
+  }
+}
+
+.site-section {
+  @apply py-20 p-4;
+}
+
+.site-section > .wrapper {
+  @apply max-w-6xl mx-auto;
+}

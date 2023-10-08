@@ -2,6 +2,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  css: ["~/assets/css/main.css"],
   pwa: {
     /* PWA options */
     manifest: {
@@ -55,5 +56,14 @@ export default defineNuxtConfig({
       routes: ["/", "/about"],
     },
   },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   modules: ["@vite-pwa/nuxt"],
+  typescript: {
+    shim: false,
+  },
 });
